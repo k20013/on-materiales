@@ -1,0 +1,19 @@
+.navContainer {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 1rem 0 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 24px;
+}
+
+.contacto {
+    display: flex;
+    justify-content: center;
+}
+
+.sections {
+    display: flex;
+    justify-content: space-evenly;
+}
