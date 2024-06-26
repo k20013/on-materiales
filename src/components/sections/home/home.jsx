@@ -6,7 +6,7 @@ const Home = () => {
         <section className={styles.home}>
 
             <div className={styles.content}>
-                <h1>On materiales</h1>
+            <h1>On materiales</h1>
 
                 <div className={styles.subTitle}>
                     <span>10 años construyendo hogares</span>
