@@ -1,7 +1,8 @@
 import './App.css'
 
-// import NavBar from './components/layout/navBar/navBar';
+import NavBar from './components/layout/navBar/navBar';
 import Footer from './components/layout/footer/footer';
+import Brands from './components/layout/brands/brands';
 
 import Home from './components/sections/home/home';
 import Products from './components/sections/products/products';
@@ -11,20 +12,15 @@ function App() {
 
   return (
     <>
-      {/* <NavBar /> */}
+      <NavBar />
 
       <Home />
-
-      {/* <div className='message'>
-        <p>
-          Nos dedicamos a brindar a soluciones integrales para tus proyectos,
-          desde la obra más pequeña hasta la más grande.
-        </p>
-      </div> */}
 
       <Competencies />
 
       <Products />
+
+      <Brands />
 
       <Footer />
     </>

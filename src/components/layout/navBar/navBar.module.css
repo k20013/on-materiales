@@ -1,19 +1,58 @@
-.navContainer {
+@keyframes hide {
+    from {
+        visibility: visible;
+        opacity: 1;
+    } to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.container {
+    background-color: rgba(13, 13, 13, 0.6);
+    backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
+    height: 75px;
     width: 100vw;
-    padding: 1rem 0 1rem 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    font-size: 24px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    visibility: hidden;
+    animation: hide .3s ease-out;
+    transition: all .3s ease-out;
 }
 
-.contacto {
-    display: flex;
-    justify-content: center;
+.container:hover {
+    background-color: rgba(13, 13, 13, 0.9);
 }
 
-.sections {
+@keyframes show {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+.show {
+    animation: show .5s ease-out;
+    visibility: visible;
+}
+
+.container>div {
+    margin: 0 5rem;
     display: flex;
-    justify-content: space-evenly;
+    gap: 5rem;
+}
+
+.container>div>span>a>svg {
+    fill: #F2F2F2;
+    width: auto;
+    height: 40px;
+}
+
+.container>div>span>a>svg:hover {
+    fill: white;
 }

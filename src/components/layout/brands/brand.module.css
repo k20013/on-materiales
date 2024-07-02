@@ -1,0 +1,36 @@
+.container {
+    background-color: white;
+    color: black;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 2.5rem;
+}
+
+.container::before {
+    content: "";
+    background: linear-gradient(to bottom, #F2F2F2, white);
+    height: 5rem;
+}
+
+.container::after {
+    content: "";
+    background: linear-gradient(to bottom, white, #F2F2F2 );
+    height: 5rem;
+}
+
+.container>span {
+    text-align: center;
+    font-size: 40px;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.images>img {
+    width: auto;
+    height: 100px;
+}

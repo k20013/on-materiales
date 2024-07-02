@@ -4,29 +4,10 @@
   --color-three: #8C8C8C;
   --color-four: #404040;
   --color-five: #0D0D0D;
-}
 
-.message {
-  background-color: #F2F2F2;
-  color: #0D0D0D;
-  width: 75%;
-  margin: 5rem auto;
-  padding: 2.5rem;
-  border-radius: 40px;
+  margin: 5vh 0 0 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-}
-
-.message>p {
-  margin: 0;
-  font-size: 40px;
-  font-weight: 500;
-  text-align: center;
-  text-wrap: wrap;
-}
-
-.auxContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  gap: 15rem;
 }
