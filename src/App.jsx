@@ -5,7 +5,7 @@ import Footer from './components/layout/footer/footer';
 
 import Home from './components/sections/home/home';
 import Products from './components/sections/products/products';
-import About from './components/sections/about/about';
+import Competencies from './components/sections/competencies/competencies';
 
 function App() {
 
@@ -15,16 +15,16 @@ function App() {
 
       <Home />
 
-      <div className='message'>
-        <p>Somos On Materiales, 
-          una empresa con más de 10 años en la distribución de materiales de construcción de alta calidad. 
-          Nos dedicamos a brindar a nuestros clientes soluciones integrales para sus proyectos de construcción, 
+      {/* <div className='message'>
+        <p>
+          Nos dedicamos a brindar a soluciones integrales para tus proyectos,
           desde la obra más pequeña hasta la más grande.
         </p>
-      </div>
+      </div> */}
+
+      <Competencies />
 
       <Products />
-      {/* <About /> */}
 
       <Footer />
     </>

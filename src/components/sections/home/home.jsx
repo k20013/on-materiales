@@ -9,7 +9,7 @@ const Home = () => {
             <h1>On materiales</h1>
 
                 <div className={styles.subTitle}>
-                    <span>10 años construyendo hogares</span>
+                    <span>10 años en la distribución de materiales de construcción de alta calidad</span>
                 </div>
             </div>
 
