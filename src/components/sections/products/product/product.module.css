@@ -35,3 +35,22 @@
     justify-content: center;
     overflow: hidden;
 }
+
+@media (max-width: 800px) {
+    .productContainer {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .product {
+        background: linear-gradient(to bottom, #0D0D0D, transparent);
+        flex-direction: column;
+        padding: 0;
+    }
+    .product>h1 {
+        text-align: center;
+    }
+    .content {
+        border-radius: 0;
+        width: 100%;
+    }
+}

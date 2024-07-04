@@ -13,12 +13,16 @@
     backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
-    height: 75px;
+    height: auto;
+    padding: 1.5rem 0;
     width: 100vw;
     z-index: 999;
+
     display: flex;
+    /* flex-wrap: wrap-reverse; */
     align-items: center;
     justify-content: space-between;
+
     visibility: hidden;
     animation: hide .3s ease-out;
     transition: all .3s ease-out;
@@ -50,9 +54,31 @@
 .container>div>span>a>svg {
     fill: #F2F2F2;
     width: auto;
-    height: 40px;
+    height: 60px;
 }
 
 .container>div>span>a>svg:hover {
     fill: white;
+}
+
+@media (max-width: 800px) {
+    .container {
+        justify-content: center;
+    }
+    .container>div {
+        gap: 3.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        flex-wrap: wrap-reverse;
+        gap: 1rem;
+    }
+    .container>div {
+        gap: 2.5rem;
+    }
+    .container>div>span>a>svg {
+        height: 50px;
+    }
 }
